@@ -42,10 +42,10 @@ The shapefiles in this repository are in standard ESRI Shapefile format (.shp, .
 import geopandas as gpd
 
 # Load daladala routes
-daladala = gpd.read_file('path/to/daladala_routes.shp')
+daladala = gpd.read_file('path/to/Daladala - Roads.shp')
 
 # Load UDART routes
-udart = gpd.read_file('path/to/udart_routes.shp')
+udart = gpd.read_file('path/to/UDART - Roads.shp')
 
 # Display basic information
 print(daladala.head())
@@ -57,8 +57,8 @@ print(udart.crs)  # Check coordinate reference system
 library(sf)
 
 # Load shapefiles
-daladala <- st_read("path/to/daladala_routes.shp")
-udart <- st_read("path/to/udart_routes.shp")
+daladala <- st_read("path/to/Daladala - Roads.shp")
+udart <- st_read("path/to/UDART - Roads.shp")
 
 # Plot routes
 plot(st_geometry(daladala))
